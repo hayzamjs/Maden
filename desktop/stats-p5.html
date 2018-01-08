@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Stats</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700" rel="stylesheet">
+    <script src="stats-p5.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    html,
+    body {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+</head>
+<body>
+    <!-- updated -->
+    <div style="position:absolute;width:100%;bottom:10px;text-align:center;color:#aaa;font-size:10px">note that mining rewards are distributed approximately every 48 hours, so please check back soon</div>
+    <div id="xaxis-label-friends">
+        <img class="graphicon" src="assets/pages/cute-graph-pink.png">
+        <div>Please invite 3 of your friends</div>
+        <a href="#" target="_blank"><img src="assets/social/fb.png"></a>
+        <a href="https://twitter.com/intent/tweet?text=Help%20people%20by%20donating%20with%20a%20computer%20program%20%23MADEN&url=https://hayzamjs.github.io/maden" target="_blank"><img src="assets/social/twitter.png"></a>
+    </div>
+    <div id="topbox">
+      <center>
+        <style>
+        #rectangle{
+          width:550px;
+          height:50px;
+          background:red;
+        }
+        </style>
+        <a href="https://electroneum.hashvault.pro/api/miner/etnk4RrUFVL4SXd5bsFjcp1GANMGDwn2cZzzniJLdP1h4oXc6pKFCzTM4PK62nafKPQqwCxbg6eZg7s3qy9PYKjQ3FE5ADbfmi/stats" target="_blank"><div id="rectangle"><center><h3><font color="white">Click here to see our mining stats</font></h3></center></div></a>
+</center>
+</div>
+    <style>
+    .will {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }
+    </style>
+    <div class="will">
+      <h1>You are successfully mining, thank you!</h1></div>
+    <script>
+    <script>
+    const shell = require('electron').shell;
+    // make links load in external browser
+    $(document).on('click', 'a[href^="https"]', function(event) {
+        event.preventDefault();
+        shell.openExternal(this.href);
+    });
+    </script>
+    </script>
+</body>
+</html>
