@@ -1,4 +1,4 @@
-# Bail Bloc Desktop Client
+# Maden Desktop Client
 
 ## Developer setup
 
@@ -25,23 +25,3 @@ electron-builder --mac #or --windows or --linux
 ```
 
 This will package up the app and stick it in the `dist` folder.
-
-## Make a new public releaes
-
-First generate a GitHub access token by going to [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new).
-
-The access token should have the repo scope/permission. Once you have the token, assign it to an environment variable (on macOS/linux):
-
-```
-export GH_TOKEN="<YOUR_TOKEN_HERE>"
-```
-
-Then run:
-
-```
-npm run publish
-```
-
-This will create a draft of a github release at [https://github.com/thenewinquiry/bailbloc/releases](https://github.com/thenewinquiry/bailbloc/releases). Edit the draft to make the release public.
-
-Please note: you must increment the version number found in `package.json` to make a new release.
